@@ -1,11 +1,18 @@
 body {
-    margin: 0 24px;
+    box-sizing: border-box;
+}
+
+div {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 24px;
+    height: 64px;
 }
 
 header .hyperlinks{
@@ -18,4 +25,26 @@ header .hyperlinks h6 {
 
 header img {
     height: 32px;
+}
+
+.banner {
+    display: flex;
+    background-color: lightgrey;
+    width: 100%;
+    align-items: center;
+}
+
+.banner img {
+    width: 60%;
+    padding: 24px;
+}
+
+.banner .text {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.banner .text p {
+    background-color: grey;
+    padding: 8px 0;
 }
