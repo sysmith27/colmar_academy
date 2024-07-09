@@ -2,9 +2,13 @@ body {
     box-sizing: border-box;
 }
 
-div {
-    padding-top: 32px;
-    padding-bottom: 32px;
+#main {
+    padding: 32px 24px;
+}
+
+#text {
+    display: inline-flex;
+    flex-direction: column;
 }
 
 header {
@@ -39,12 +43,36 @@ header img {
     padding: 24px;
 }
 
-.banner .text {
-    display: inline-flex;
+.banner #text p {
+    background-color: grey;
+    padding: 8px 0;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+}
+
+.information .main {
+    width: 60%;
+    margin-right: 24px;
+}
+
+.information .main img {
+    width: 100%;
+}
+
+.information .dates {
+    width: 40%;
+    display: flex;
     flex-direction: column;
 }
 
-.banner .text p {
-    background-color: grey;
-    padding: 8px 0;
+.information .dates div {
+    display: inline-flex;
+}
+
+.information .dates img {
+    width: 35%;  
+    padding: 16px 16px;
 }
