@@ -76,3 +76,36 @@ header img {
     width: 35%;  
     padding: 16px 16px;
 }
+
+.start-learning {
+    background-color: lightgrey;
+}
+
+.start-learning h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.start-learning .courses {
+    /*display: flex;
+    align-content: center;
+    flex-flow: row wrap;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 32px 72px;
+}
+
+#class {
+    background-color: white;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 32px;
+}
+
+#class img {
+    width: 100%;
+}
+
+#class h4, p {
+    margin: 24px 16px;
+}
