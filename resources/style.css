@@ -2,13 +2,14 @@ body {
     box-sizing: border-box;
 }
 
-#main {
+#main, h2{
     padding: 32px 24px;
 }
 
 #text {
     display: inline-flex;
     flex-direction: column;
+    padding: 0 16px;
 }
 
 header {
@@ -87,9 +88,6 @@ header img {
 }
 
 .start-learning .courses {
-    /*display: flex;
-    align-content: center;
-    flex-flow: row wrap;*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 32px 72px;
@@ -106,6 +104,47 @@ header img {
     width: 100%;
 }
 
-#class h4, p {
+#class h4, #class p {
     margin: 24px 16px;
+}
+
+.thesis-exhibit h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.thesis-exhibit .container {
+    display: flex;
+    align-items: center;
+}
+
+.thesis-exhibit .container .video {
+    padding: 0 24px;
+    width: 60%;
+}
+
+.thesis-exhibit .container .video video {
+    width: 100%;
+}
+
+.thesis-exhibit .thesis-subcategories .fisma, .now-then{
+    display: flex;
+    padding: 16px;
+}
+
+.thesis-exhibit .thesis-subcategories .fisma {
+    background-color: lightgray;
+}
+
+.thesis-exhibit img {
+    width: 35%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
 }
